@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css" />
+       
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark px-3">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-code"></i>
+        <span>coursesaket</span></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tutorials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Notes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown">Start Learning</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">HTML</a></li>
+              <li><a class="dropdown-item" href="#">CSS</a></li>
+              <li><a class="dropdown-item" href="#">JavaScript</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown">Tutorials</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Python</a></li>
+              <li><a class="dropdown-item" href="#">Java</a></li>
+              <li><a class="dropdown-item" href="#">C++</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Search Bar -->
+        <form class="d-flex search-bar">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search..."
+            aria-label="Search" />
+          <!-- <button class="search-shortcut" disabled>
+            <i class="fa-brands fa-apple"></i> K
+          </button> -->
+        </form>
+
+        <!-- Buttons -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#loginForm"
+                onclick="showForm('login')">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#signupForm"
+                onclick="showForm('signup')">Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- LOGIN FORM -->
+    <div class="form-box" id="loginForm">
+      <h3>Login</h3>
+      <form action="login.php" method="POST">
+        <div class="mb-3">
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Email"
+            required />
+        </div>
+        <div class="mb-3">
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            placeholder="Password"
+            required />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div class="form-box" id="signupForm">
+      <h3>Signup</h3>
+      <form action="signup.php" method="POST">
+        <div class="mb-3">
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Full Name"
+            required />
+        </div>
+        <div class="mb-3">
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Email"
+            required />
+        </div>
+        <div class="mb-3">
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            placeholder="Password"
+            required />
+        </div>
+        <button type="submit" class="btn btn-success w-100">Signup</button>
+      </form>
+    </div>
+
+    <!-- hero code start hear  -->
+    <div class="hero-section">
+      <div class="hero-section text-center text-white py-5 px-3">
+        <div class="badge bg-secondary mb-4 fs-6">Learn coding the right
+          way</div>
+
+        <h1 class="typing-text"
+          style="font-size: 4rem; font-weight: bold;">Welcome to Saket
+          Sharma</h1>
+        <h4 class="text-light" style="font-size: 2rem;">Learn Python</h4>
+
+        <p class="typing-text"
+          style="font-size: 1.3rem; line-height: 1.8; max-width: 700px; margin: 20px auto;">
+          Confused about which course to take? We’ve got you covered! Browse
+          courses and discover the best option for you.
+          It’s free! <strong>Saket Sharma</strong> is my effort to teach the
+          basics and coding techniques in less time.
+        </p>
+
+        <div
+          class="hero-buttons d-flex justify-content-center gap-3 mt-4 mb-5 flex-wrap">
+          <a href="#" class="btn btn-light btn-lg">Explore Courses</a>
+          <a href="#" class="btn btn-dark btn-lg">Read Articles</a>
+        </div>
+
+        <div
+          class="stats d-flex justify-content-center gap-5 text-white-50 flex-wrap fs-5 pt-3  ">
+          <div><strong>100+</strong><br>Courses</div>
+          <div><strong>500K+</strong><br>Students</div>
+          <div><strong>5.0</strong><br>Rating</div>
+        </div>
+      </div>
+
+      <!-- Next Section start in the section  -->
+      <section class="py-5 text-white" style="background-color: #0d1117;">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-3">Code Smarter with Real-World Practice</h2>
+          <p class="mb-5" style="max-width: 700px; margin: auto;">
+            At CodeWithHarry, you don't just learn code — you engage in
+            practical exercises that reflect
+            real-world scenarios. From beginner-friendly lessons to advanced
+            courses trusted by professionals,
+            we prepare you for real-world projects.
+          </p>
+
+          <div class="row gx-5 gy-5">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.pexels.com/photos/1181288/pexels-photo-1181288.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="card-img-top" alt="Web Development">
+                <div class="card-body bg-dark text-white">
+                  <h5 class="card-title fw-bold">Web Development</h5>
+                  <p class="card-text">Learn HTML, CSS, JavaScript and modern
+                    frameworks to build responsive websites and web
+                    applications.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="card-img-top" alt="Data Science">
+                <div class="card-body bg-dark text-white">
+                  <h5 class="card-title fw-bold">Data Science & AI</h5>
+                  <p class="card-text">Master Python, data analysis, machine
+                    learning and artificial intelligence with hands-on
+                    projects.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="https://images.pexels.com/photos/1181345/pexels-photo-1181345.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="card-img-top" alt="DSA">
+                <div class="card-body bg-dark text-white">
+                  <h5 class="card-title fw-bold">Data Structures &
+                    Algorithms</h5>
+                  <p class="card-text">Learn DSA and crack interviews at top
+                    companies like Google and Microsoft.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Section Start hear in the section  -->
+      <section class="py-5 text-white" style="background-color: #0d1117;">
+        <div class="container text-center">
+          <h3 class="fw-bold mb-4">Empowering Aspiring Developers to Build Their
+            Future in Tech!</h3>
+
+          <div class="row gy-5 text-center mt-5">
+            <!-- Column 1 -->
+            <div class="col-md-4">
+              <p class="text-muted mb-1">Students land their first developer job
+                in</p>
+              <h2 class="fw-bold">6 months</h2>
+              <p class="text-secondary">on average</p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-md-4">
+              <p class="text-muted mb-1">Over</p>
+              <h2 class="fw-bold">7,000,000+</h2>
+              <p class="text-secondary">students trained</p>
+            </div>
+                   
+            <!-- Column 3 -->
+            <div class="col-md-4">
+              <p class="text-muted mb-1">Total YouTube Views</p>
+              <h2 class="fw-bold">1 Billion+</h2>
+              <p class="text-secondary">views and counting</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      Dream Job In the Section In hear -->
+      <section class="py-5 text-white" style="background-color: #0d0d0d;">
+        <div class="container text-center">
+          <h3 class="fw-bold mb-4">Helped students achieve their dream job
+            at</h3>
+
+          <div class="row justify-content-center g-3">
+            <!-- Logo item -->
+            <div class="col-4 col-md-2">
+              <div class="p-3 bg-dark rounded text-muted fw-bold">
+                <img src="amazon.png" alt="Amazon" class="img-fluid"
+                  style="height: 30px;" />
+                amazon</div>
+
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="p-3 bg-dark rounded text-muted fw-bold">Google</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div
+                class="p-3 bg-dark rounded text-muted fw-bold">Microsoft</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="p-3 bg-dark rounded text-muted fw-bold">Goldman
+                Sachs</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="p-3 bg-dark rounded text-muted fw-bold">PayPal</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="p-3 bg-dark rounded text-muted fw-bold">SAMSUNG</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="p-3 bg-dark rounded text-muted fw-bold">EY</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="p-3 bg-dark rounded text-muted fw-bold">HITACHI</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="p-3 bg-dark rounded text-muted fw-bold">JPMorgan</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="p-3 bg-dark rounded text-muted fw-bold">IBM</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div class="p-3 bg-dark rounded text-muted fw-bold">Dell</div>
+            </div>
+            <div class="col-4 col-md-2">
+              <div
+                class="p-3 bg-dark rounded text-muted fw-bold">Deloitte.</div>
+            </div>
+          </div>
+
+          <p class="text-secondary mt-4"><a href="#"
+              class="text-info text-decoration-none">+ many more
+              companies</a></p>
+        </div>
+      </section>
+
+      <!-- Next Section Start Hear Than  -->
+      <section class="py-5 text-white" style="background-color: #0d0d0d;">
+        <div class="container text-center">
+          <p class="text-muted mb-1">Courses</p>
+          <h2 class="fw-bold mb-5">Master Coding with Our Core Offerings</h2>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="bg-secondary bg-opacity-25 rounded p-4 h-100">
+                <div class="icon mb-3 fs-1 text-white-50">⚡</div>
+                <h5 class="fw-semibold text-white">Beginner-Friendly</h5>
+                <p class="text-muted">Step-by-step courses designed for absolute
+                  beginners to kickstart their coding journey.</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="bg-secondary bg-opacity-25 rounded p-4 h-100">
+                <div class="icon mb-3 fs-1 text-white-50">📚</div>
+                <h5 class="fw-semibold text-white">Advanced Concepts</h5>
+                <p class="text-muted">Deep dive into advanced topics and
+                  frameworks to level up your skills.</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="bg-secondary bg-opacity-25 rounded p-4 h-100">
+                <div class="icon mb-3 fs-1 text-white-50">💻</div>
+                <h5 class="fw-semibold text-white">Real-World Projects</h5>
+                <p class="text-muted">Learn by building real-world projects and
+                  gain hands-on experience.</p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4">
+              <div class="bg-secondary bg-opacity-25 rounded p-4 h-100">
+                <div class="icon mb-3 fs-1 text-white-50">$</div>
+                <h5 class="fw-semibold text-white">Affordable Pricing</h5>
+                <p class="text-muted">Access premium courses at prices tailored
+                  for students and professionals.</p>
+              </div>
+            </div>
+              
+            <!-- Card 5 -->
+            <div class="col-md-4">
+              <div class="bg-secondary bg-opacity-25 rounded p-4 h-100">
+                <div class="icon mb-3 fs-1 text-white-50">📦</div>
+                <h5 class="fw-semibold text-white">Comprehensive Resources</h5>
+                <p class="text-muted">Gain access to a variety of coding
+                  resources like docs, templates, and code snippets.</p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4">
+              <div class="bg-secondary bg-opacity-25 rounded p-4 h-100">
+                <div class="icon mb-3 fs-1 text-white-50">📰</div>
+                <h5 class="fw-semibold text-white">Industry Insights</h5>
+                <p class="text-muted">Stay updated with the latest tech trends
+                  and insights to keep your skills relevant.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next part in on the section Hear  -->
+
+      <section class="py-5 text-white" style="background-color: #0d0d0d;">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-5">Testimonials</h2>
+
+          <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-md-6">
+              <div class="bg-dark bg-opacity-75 rounded p-4 h-100 text-start">
+                <div class="fs-3 text-secondary mb-3">❝</div>
+                <p>
+                  I don't have words to thank this man, I'm really grateful to
+                  have this channel and website in my daily routine.
+                  If you're a mere beginner, then you can trust this guy and can
+                  put your time into his content.
+                  I can assure you that it'll be worth it.
+                </p>
+                <h6 class="fw-bold mt-4 mb-0">Mohit Kumar</h6>
+                <p class="text-muted small">Web Developer</p>
+              </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="col-md-6">
+              <div class="bg-dark bg-opacity-75 rounded p-4 h-100 text-start">
+                <div class="fs-3 text-secondary mb-3">❝</div>
+                <p>
+                  For everyone who wants to level up their #Coding and #Dev
+                  skills — seriously, this channel is for you!
+                  Both basic and advanced stacks are covered, and one can learn
+                  according to their skill levels.
+                  And the icing on the cake is, most of the content is available
+                  for free.
+                </p>
+                <h6 class="fw-bold mt-4 mb-0">Rakesh Shetty</h6>
+                <p class="text-muted small">Web Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Part Start hear  -->
+
+      <section class="py-5 text-center text-white position-relative"
+        style="background: url('./image/image_3.jpg') no-repeat center center/cover;">
+        <!-- Dark Overlay -->
+        <div
+          class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+
+        <div class="container position-relative" style="z-index: 1;">
+          <h1 class="display-3 fw-bold">Start Your Coding Journey</h1>
+          <p class="lead mb-4">Learn coding step-by-step with India's most loved
+            programming mentor.</p>
+          <a href="#" class="btn btn-light btn-lg px-4 fw-bold">Start Now</a>
+        </div>
+      </section>
+
+      <!-- Next Section Start hear  -->
+      <footer style="background-color: #111827;" class="text-light py-5">
+        <div class="container">
+          <div class="row gy-4 text-center text-md-start">
+
+            <!-- Column 1 -->
+            <div class="col-md-3">
+              <h6 class="fw-bold">Main</h6>
+              <ul class="list-unstyled">
+                <li><a href="#"
+                    class="text-secondary text-decoration-none">Home</a></li>
+                <li><a href="#"
+                    class="text-secondary text-decoration-none">Contact</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none">Work
+                    With Us</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none">My
+                    Gear</a></li>
+              </ul>
+            </div>
+            
+            <!-- Column 2 -->
+            <div class="col-md-3">
+              <h6 class="fw-bold">Learn</h6>
+              <ul class="list-unstyled">
+                <li><a href="#"
+                    class="text-secondary text-decoration-none">Courses</a></li>
+                <li><a href="#"
+                    class="text-secondary text-decoration-none">Tutorials</a></li>
+                <li><a href="#"
+                    class="text-secondary text-decoration-none">Notes</a></li>
+              </ul>
+            </div>
+       
+            <!-- Column 3 -->
+            <div class="col-md-3">
+              <h6 class="fw-bold">Legal</h6>
+              <ul class="list-unstyled">
+                <li><a href="#"
+                    class="text-secondary text-decoration-none">Terms</a></li>
+                <li><a href="#"
+                    class="text-secondary text-decoration-none">Privacy</a></li>
+                <li><a href="#"
+                    class="text-secondary text-decoration-none">Refund</a></li>
+              </ul>
+            </div>
+                     
+            <!-- Column 4 -->
+            <div class="col-md-3">
+              <h6 class="fw-bold">Social</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-secondary text-decoration-none"><i
+                      class="fab fa-github me-2"></i>GitHub</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none"><i
+                      class="fab fa-x-twitter me-2"></i>Twitter (X)</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none"><i
+                      class="fab fa-youtube me-2"></i>YouTube</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none"><i
+                      class="fab fa-facebook me-2"></i>Facebook</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Bottom note -->
+          <div class="text-center mt-4 text-muted small" style="color: white;">
+            Made with <span class="text-danger">❤️</span> and <span
+              class="text-warning">☕</span> in India
+          </div>
+        </div>
+      </footer>
+
+      <script src="./js/javascript.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>
