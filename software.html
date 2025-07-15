@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- navbar start hear -->
+
     <nav class="navbar navbar-expand-lg navbar-dark px-3">
       <a class="navbar-brand" href="#"><i class="fa-solid fa-code"></i>
         <span>coursesaket</span></a>
@@ -208,141 +210,152 @@
       </form>
     </div>
     <!-- Navbar end hear  -->
-  <br>
-  <br>
-   
+
     <!-- cousre start hear  -->
 
-    <section class="text-white font-sans mt-[100px]">
-      <div class="max-w-7xl mx-auto p-4 grid grid-cols-1 lg:grid-cols-3 gap-10">
-        <!-- Left Side: What You'll Learn + Course Content -->
-        <div class="lg:col-span-2 space-y-10">
-          <!-- What you'll learn -->
-          <div class="bg-[#1a1c23] p-6 rounded-lg border border-gray-700">
-            <h2 class="text-2xl font-bold mb-4">What you'll learn</h2>
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-300 text-sm"
+    <section class="bg-[#0e1015] text-white py-10 px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Premium Courses</h2>
+
+      <!-- Courses Grid -->
+      <div
+        class="max-w-7xl mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <!-- Course Card Start -->
+        <div
+          class="bg-[#1a1c23] rounded-lg overflow-hidden shadow-lg flex flex-col"
+        >
+          <div class="relative">
+            <img
+              src="image/canav_pro_1.avif"
+              alt="Course Image"
+              class="w-full h-48 object-cover"
+            />
+            <span
+              class="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded"
+              >50% OFF</span
             >
-              <p>
-                ✅ Master Python programming from a data science perspective
-              </p>
-              <p>✅ Perform powerful data analysis using Pandas and NumPy</p>
-              <p>
-                ✅ Create stunning data visualizations with Matplotlib and
-                Seaborn
-              </p>
-              <p>
-                ✅ Understand and apply core statistics and probability concepts
-              </p>
-              <p>
-                ✅ Clean and preprocess real-world datasets for accurate
-                insights
-              </p>
-              <p>✅ Work on real-life projects</p>
-              <p>✅ Use Jupyter Notebooks for data-driven development</p>
-            </div>
+            <span
+              class="absolute top-2 right-2 bg-yellow-500 text-black text-xs font-semibold px-2 py-1 rounded"
+              >Featured</span
+            >
           </div>
-
-          <!-- Course content -->
-          <div>
-            <h2 class="text-2xl font-bold mb-2">Course content</h2>
-            <p class="text-sm text-gray-400 mb-4">
-              19 sections • 153 lectures • 25hr 15min (so far)
-            </p>
-
-            <div class="space-y-4">
-              <!-- Module -->
-              <details class="bg-[#1a1c23] rounded-lg p-4">
-                <summary class="font-semibold cursor-pointer">
-                  Introduction to Data Science
-                  <span class="float-right text-sm text-gray-400"
-                    >3 lectures • 27min</span
-                  >
-                </summary>
-              </details>
-
-              <details class="bg-[#1a1c23] rounded-lg p-4">
-                <summary class="font-semibold cursor-pointer">
-                  Understanding the Conda Environment
-                  <span class="float-right text-sm text-gray-400"
-                    >6 lectures • 37min</span
-                  >
-                </summary>
-              </details>
-
-              <details class="bg-[#1a1c23] rounded-lg p-4">
-                <summary class="font-semibold cursor-pointer">
-                  Python Refresher (For Data Science)
-                  <span class="float-right text-sm text-gray-400"
-                    >19 lectures • 137min</span
-                  >
-                </summary>
-              </details>
-
-              <details class="bg-[#1a1c23] rounded-lg p-4">
-                <summary class="font-semibold cursor-pointer">
-                  Project 1 - Coders of Delhi
-                  <span class="float-right text-sm text-gray-400"
-                    >4 lectures • 59min</span
-                  >
-                </summary>
-              </details>
-
-              <details class="bg-[#1a1c23] rounded-lg p-4">
-                <summary class="font-semibold cursor-pointer">
-                  Data analysis using Numpy
-                  <span class="float-right text-sm text-gray-400"
-                    >7 lectures • 87min</span
-                  >
-                </summary>
-              </details>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Sidebar -->
-        <div class="space-y-6">
-          <div class="bg-[#1a1c23] p-4 rounded-lg">
-            <img src="./image/digital_marketing.jpg" alt="Course" class="rounded mb-4" />
-            <div class="text-2xl font-bold mb-1">
-              ₹2899
-              <span class="text-gray-400 line-through text-lg">₹4499</span>
+          <div class="p-4 flex flex-col justify-between flex-grow">
+            <div>
+              <h3 class="text-lg font-bold mb-2">Full Stack Web Development</h3>
+              <p class="text-sm text-gray-400 mb-4">
+                Learn MERN stack with real projects.
+              </p>
+              <div class="flex items-center text-sm gap-4 mb-4 text-gray-400">
+                <span>🎓 saketcourse</span><span>💡 Beginner</span>
+              </div>
+              <div class="flex items-center text-sm gap-4 mb-4 text-gray-400">
+                <span>⏱ 15h</span>
+                <span>📚 32 lessons</span>
+              </div>
+              <div class="flex items-center gap-2 mb-4">
+                <span class="text-xl font-bold">₹1499</span>
+                <span class="line-through text-gray-500">₹2999</span>
+              </div>
             </div>
             <button
-              class="w-full bg-white text-black font-semibold py-2 rounded hover:bg-gray-200 mb-2"
+              class="w-full bg-white text-black font-semibold py-2 rounded hover:bg-gray-200 mt-auto"
             >
-              <a href="paynow.html">Buy Now</a>
+              <a href="viewcourse.html">View Course</a>
             </button>
-            <p class="text-xs text-gray-400 text-center">
-              Purchase this course to get access
-            </p>
-            <hr class="my-4 border-gray-600" />
-            <div class="text-sm space-y-2 text-gray-300">
-              <p>✅ 153 lectures</p>
-              <p>✅ 25hr 15min (so far)</p>
-              <p>✅ Access on mobile and desktop (2 Years)</p>
-              <p>✅ Certificate of completion</p>
-            </div>
-            <div class="mt-4">
-              <button
-                class="w-full flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-white text-sm py-2 rounded"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M4 12v-2a4 4 0 014-4h12m0 0v4m0-4l-5 5m5-5l-5-5" />
-                </svg>
-                Share
-              </button>
-              
-            </div>
           </div>
         </div>
+        <!-- Course Card End -->
+
+        <!-- Repeat above block for more courses -->
+        <!-- Copy & paste or generate dynamically -->
+
+        <!-- Sample additional cards for layout -->
+        <div
+          class="bg-[#1a1c23] rounded-lg overflow-hidden shadow-lg flex flex-col"
+        >
+          <img src="image/adobe_com[lete.jpg" class="w-full h-48 object-cover" />
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="text-lg font-bold mb-2">Data Science with Python</h3>
+            <p class="text-sm text-gray-400 mb-2">
+              Master data science from scratch.
+            </p>
+            <div class="flex items-center text-sm text-gray-400 mb-2 gap-3">
+              <span>⏱ 20h</span>
+              <span>📚 45 lessons</span>
+            </div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="text-xl font-bold">₹1899</span>
+              <span class="line-through text-gray-500">₹3599</span>
+            </div>
+            <button
+              class="w-full bg-white text-black font-semibold py-2 rounded hover:bg-gray-200 mt-auto"
+            >
+              <a href="viewcourse.html">View Course</a>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="bg-[#1a1c23] rounded-lg overflow-hidden shadow-lg flex flex-col"
+        >
+          <img src="image/corel_drew.png" class="w-full h-48 object-cover" />
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="text-lg font-bold mb-2">Data Science with Python</h3>
+            <p class="text-sm text-gray-400 mb-2">
+              Master data science from scratch.
+            </p>
+            <div class="flex items-center text-sm text-gray-400 mb-2 gap-3">
+              <span>⏱ 20h</span>
+              <span>📚 45 lessons</span>
+            </div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="text-xl font-bold">₹1899</span>
+              <span class="line-through text-gray-500">₹3599</span>
+            </div>
+            <button
+              class="w-full bg-white text-black font-semibold py-2 rounded hover:bg-gray-200 mt-auto"
+            >
+              <a href="viewcourse.html">View Course</a>
+            </button>
+          </div>
+        </div>    
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <!-- Pagination -->
+      <div class="flex justify-center mt-10 space-x-2 text-sm text-white">
+        <a
+          href="?page=1"
+          class="px-3 py-1 bg-[#1a1c23] border border-gray-600 rounded hover:bg-gray-700"
+          >1</a
+        >
+        <a
+          href="?page=2"
+          class="px-3 py-1 bg-[#1a1c23] border border-gray-600 rounded hover:bg-gray-700"
+          >2</a
+        >
+        <a
+          href="?page=3"
+          class="px-3 py-1 bg-[#1a1c23] border border-gray-600 rounded hover:bg-gray-700"
+          >3</a
+        >
+        <a
+          href="?page=4"
+          class="px-3 py-1 bg-[#1a1c23] border border-gray-600 rounded hover:bg-gray-700"
+          >4</a
+        >
+        <a
+          href="?page=5"
+          class="px-3 py-1 bg-[#1a1c23] border border-gray-600 rounded hover:bg-gray-700"
+          >5</a
+        >
+        <span class="px-2 py-1">...</span>
+        <a
+          href="?page=10"
+          class="px-3 py-1 bg-[#1a1c23] border border-gray-600 rounded hover:bg-gray-700"
+          >10</a
+        >
       </div>
     </section>
 
@@ -470,6 +483,7 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
       defer
